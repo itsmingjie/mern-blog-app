@@ -9,7 +9,7 @@ module.exports = validatePostInput = data => {
 
   //converting empty fields to empty string as validator function works only with strings
   title = !isEmpty(title) ? title : "";
-  bosy = !isEmpty(body) ? body : "";
+  body = !isEmpty(body) ? body : "";
 
   if (Validator.isEmpty(title)) {
     errors.title = "Title is required";
