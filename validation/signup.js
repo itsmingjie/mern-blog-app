@@ -2,7 +2,7 @@
 const Validator = require("validator");
 const isEmpty = require("is-empty");
 
-module.exorts = validateSignUpInput = data => {
+module.exports = validateSignUpInput = data => {
   let errors = {};
 
   let { user_name, email, password } = data;
